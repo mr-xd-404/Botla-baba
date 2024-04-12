@@ -2,9 +2,9 @@ module.exports.config = {
 	name: "info",
 	version: "1.0.1", 
 	hasPermssion: 0,
-	credits: "AYAN CHOWDHURY",
+	credits: "Ayan mallik", //don't change the credits please
 	description: "Admin and Bot info.",
-	commandCategory: "Owner",
+	commandCategory: "...",
 	cooldowns: 1,
 	dependencies: 
 	{
@@ -22,41 +22,37 @@ const time = process.uptime(),
 		minutes = Math.floor((time % (60 * 60)) / 60),
 		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
-var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【HH:mm:ss】");
-var link =                                     
-["https://i.postimg.cc/XX6V60sM/FB-IMG-17117672646281762.jpg",
-"https://i.postimg.cc/3wNWBY69/Screenshot-2024-04-10-06-17-08-49.jpg",
-"https://i.postimg.cc/BnqYTbXN/IMG-20240406-164351.jpg"];
-var callback = () => api.sendMessage({body:`𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 ❤🪽
+var juswa = moment.tz("Asia/Manila").format("『D/MM/YYYY』 【hh:mm:ss】");
+var link =["https://i.postimg.cc/6pHsh0nG/20231015-100535.jpg", 
+            
+            "https://i.postimg.cc/6pHsh0nG/20231015-100535.jpg", 
+            
+            "https://i.postimg.cc/6pHsh0nG/20231015-100535.jpg",
 
-✰𝔹𝕠𝕥 ℕ𝕒𝕞𝕖︎︎︎✰: ${global.config.BOTNAME}
+            "https://i.postimg.cc/6pHsh0nG/20231015-100535.jpg",
+       
 
-✿︎𝔹𝕠𝕥 𝔸𝕕𝕞𝕚𝕟✿︎ ☞︎︎︎ 𝐀𝐘𝐀𝐍 𝐂𝐇𝐎𝐔𝐃𝐇𝐔𝐑𝐘
-
-༆ 𝐁𝐨𝐭 𝐎𝐰𝐧𝐞𝐫 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐈𝐃 𝐋𝐢𝐧𝐤 :\n➪ https://www.facebook.com/AYAN.JANU.LOVE.YOU.MY.HEART 
-
-👋𝔽𝕠𝕣 𝔸𝕟𝕪 𝕂𝕚𝕟𝕕 𝕆𝕗 ℍ𝕖𝕝𝕡 ℂ𝕠𝕟𝕥𝕒𝕔𝕥 𝕆𝕟 𝔽𝕓 :\n➪ ♕︎Mohammad Ayan♕︎
-
-✧━━━━━━━━━━━━━━━❤🪽
-
-❀𝐁𝐨𝐭 𝐏𝐫𝐞𝐟𝐢𝐱❀: ➪ [ ${global.config.PREFIX} ] 
-
-♕︎𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿♕︎:  𝐀𝐘𝐀𝐍 𝐂𝐇𝐎𝐔𝐃𝐇𝐔𝐑𝐘
-
-👑𝕌ℙ𝕋𝕀𝕄𝔼👑 𝟚𝟜/𝟟
-
-✰𝐓𝐨𝐝𝐚𝐲 𝐢𝐬✰\n\n${juswa} 
-
-᯾𝐁𝐨𝐭 𝐢𝐬 𝐫𝐮𝐧𝐧𝐢𝐧𝐠᯾ [ ${hours}:${minutes}:${seconds} ]
-
-💟𝑻𝒉𝒂𝒏𝒌 𝒚𝒐𝒖 𝒇𝒐𝒓 𝒖𝒔𝒆𝒊𝒏𝒈 ${global.config.BOTNAME} 
+                    "https://i.postimg.cc/6pHsh0nG/20231015-100535.jpg"];
+  
+var callback = () => api.sendMessage({body:`🌹🧡𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍💝💦 
 
 
-♕︎𝗛𝗲𝗿𝗲 𝗶𝘀 𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲➪
+🌹🧡BOT NAME : ${global.config.BOTNAME}
 
-♕︎𝐀𝐘𝐀𝐍 𝐂𝐇𝐎𝐔𝐃𝐇𝐔𝐑𝐘♕︎
+🌹🧡BOT ADMIN : 𝐁𝐀𝐏𝐏𝐀 𝐃𝐄𝐁𝐍𝐀𝐓𝐇
 
+FACEBOOK : https://www.facebook.com/bappa005
 
-`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
+BOT PREFIX : ${global.config.PREFIX}
+
+🌹🧡BOT OWNER : 𓆩𝐁𝐀𝐏𝐏𝐀᭄𓆪 ᥬ🙂᭄ 𓆩😁𓆪
+
+➟ UPTIME
+
+TODAY IS TIME : ${juswa} 
+
+BOT IS RUNNING ${hours}:${minutes}:${seconds}.
+
+THANKS FOR USING ${global.config.BOTNAME}『🙅🖤』`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
